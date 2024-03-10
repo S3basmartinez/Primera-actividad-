@@ -1,0 +1,73 @@
+html {/*se debe usar en todos los proyectos*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/**header**/
+
+/**.titulo{
+    text-align:center;
+    font-size:40px;
+    padding-top:50px;
+}**/
+
+body{
+    background-color:#19191a;
+}
+
+/**CARRUSEL**/
+.slider-box{
+    width:1280px;
+    height:auto;
+    margin: 50px auto 0;
+    overflow:hidden;/** asegura que la imagen se ajuste al contenedor manteniendo su relación de aspecto y cubriendo completamente el contenedor, lo que garantiza que todas las imágenes se vean del mismo tamaño, independientemente de sus proporciones originales.**/
+}
+
+.slider-box ul{
+    display:flex;
+    padding: 0;
+    width:400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width:100%;
+    list-style:none;
+    position: relative;
+}
+
+.slider-box img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    object-position:center right;/**Centra la imagen dentro del contenedor y al derecho**/
+    margin-left:20px;
+    
+}
+
+
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -140%;}
+    45%{margin-left: -140%;}
+
+    50%{margin-left: -270%;}
+    70%{margin-left: -270%;}
+
+    75%{margin-left: -350%;}
+    100%{margin-left: -350%;}
+}
+
+@media(max-width:991px){
+    
+    body{
+        padding:30px
+    }
+    
+    .slider-box{
+        width:100%
+    }
+}

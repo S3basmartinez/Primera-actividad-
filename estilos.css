@@ -1,0 +1,129 @@
+.bg{
+    background-color: #050505;
+}
+
+/*titulo*/
+
+.mytitulo{
+    color:#ffff;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*NAV*/
+
+nav{
+    background-color:#050505;
+    
+}
+
+.navbar-nav a{
+    color: white;   
+}
+
+.container-fluid a{
+    border-radius:5px;
+}
+
+.container-fluid a:hover{
+    color:#020202;
+    background-color: #8FC1B5;
+    box-shadow: 5px 5px 5px #589A8D;
+    transition: box-shadow 0.5s;/* Transición suave para la sombra */
+
+}
+.container-fluid{
+    padding:5px;
+}
+
+
+
+/*nosotros*/
+
+.texto-motor{
+    color:aliceblue;  
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.foto-motor{
+    overflow:hidden;
+}
+
+.foto-motor img{
+ transition: transform 0.6s ease;
+}
+
+.foto-motor img:hover{
+    transform:scale(1.2);
+}
+
+/*footer*/
+
+.iconoI{
+    color:#ffff;
+}
+
+.iconoW{
+    color: #ffff;
+}
+
+.iconoY{
+    color: #ffff;
+}
+
+/**Novedades*/
+
+.card-text{
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-title{
+    
+        font-family: "Gilda Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+
+.aventador{
+    width: 104%;
+    height: 85%;
+}
+
+.boton {
+    display:flex;
+    justify-content: center;
+}
+.boton a{
+    background-color:#8FC1B5;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#020202;
+    padding: 2px;
+    transition: background-color .3s ease-out;
+}
+
+.boton a:hover{
+    background-color: #666666;
+    cursor: pointer;
+}
+
+@media(maxwidth: 994px){
+    .mynavbar{    
+        background: rgba(102, 102, 102, 0.66);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.2px);
+        -webkit-backdrop-filter: blur(9.2px);
+        border: 1px solid rgba(102, 102, 102, 0.06);
+    }
+}
+
+/*registro*/
+
